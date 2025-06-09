@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: #f4f6fa;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            background: #fff;
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 30px 40px 20px 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        input[type="text"], input[type="password"] {
+            width: 95%;
+            padding: 8px 10px;
+            margin: 8px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+        fieldset {
+            border: 1px solid #bbb;
+            border-radius: 6px;
+            margin-bottom: 18px;
+            padding: 10px 15px 10px 15px;
+        }
+        legend {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        label {
+            margin-right: 15px;
+            font-size: 15px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        button, input[type="submit"] {
+            background: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover, input[type="submit"]:hover {
+            background: #217dbb;
+        }
+        center {
+            display: block;
+        }
+        /* Remove double submit button styling */
+        button input[type="submit"] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="simpal form">
+        
+            <input type="text" placeholder="first name" >
+        <br>
+        <input type="text" placeholder="last name"><br>
+        <fieldset>
+            <legend>Gender</legend>
+    <label for="male">
+        <input type="radio" value="male" name="gender" id="male"/>male
+    </label>
+    
+    <label for="female">
+        <input type="radio" value="female" name="gender" id="female"/>female
+    </label> <br>
+    </fieldset><br>
+    <input type="text" placeholder="mother name"><br> 
+    <input type="text" placeholder="father name"><br> 
+    <input type="text" placeholder="gmail id"><br> 
+    <input type="text" placeholder="mobile NO."><br>
+    <input type="password" placeholder="password"><br>
+    <input type="password" placeholder=" conform password">
+    <fieldset>
+        <legend>check Box</legend> 
+     <input type="checkbox">
+     </fieldset>
+     <center>
+        <button type="submit">
+            
+            <input type="submit">
+        </button>
+     </center>  
+    </form>
+</body>
+</html>
