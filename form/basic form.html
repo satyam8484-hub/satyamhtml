@@ -3,43 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>school form </title>
+    <style>
+        
+body {
+    background: rgb(190, 190, 169);
+    
+} 
+
+header nav{
+    background-color: rgb(49, 187, 180);
+        margin-top: 0;
+    margin-right: 10px;
+    margin-bottom: 50px; 
+     margin-left: 10px; 
+font-size: 50px;
+}
+form{
+background:rgba(12, 158, 184, 0.798);
+    margin: 0px 400px;
+    border-radius: 12px;
+    padding: 0px;
+    border: 5px solid rgba(182, 65, 65, 0.753);
+    transition-property: all ;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+
+}
+form:hover{ background-color: rgba(182, 105, 218, 0.799);
+    border: 3px solid rgb(222, 132, 48);
+    
+}
+    nav {
+    background-color: cadetblue;
+    text-align: center;
+    padding: 2px ;
+    border: 2px solid hotpink;
+    border-radius: 100px;
+    margin: 10px;
+    transition-property: all ;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    }
+    nav:hover{
+        background-color: rgba(139, 164, 47, 0.708);
+        border: 4px solid rgb(40, 200, 200);
+    }
+    div1{
+        font-size:20px;
+    }
+#kumar{
+    font-size: px;
+}
+#lats{
+    font-size: 15px;
+}
+/* button{
+    color: red;
+    background-color: rgb(214, 112, 39);
+    text-align: center;
+    display: block;
+
+
+} */
+ .container{
+    display: flex;
+    justify-content: center;
+align-items: center;
+background-color: rgb(39, 99, 167);
+color: rgb(57, 244, 0);
+
+
+}
+    .sum{
+        border: 2px solid rgba(166, 18, 16, 0.813);
+        border-radius: 4px;
+        
+    }
+    
+ </style>
 </head>
 <body>
+       <header>
+        <nav>
+            School Addmition Form
+            </nav>
+    </header>
     <form action="forms">
-        <center>
-        <div>
-        <h1>School Admission Form</h1> </div> <hr> <br>
-        </center>
-        <table>
-        <div>
-            <tr>
-                 <td>
-                    <label for="student name"> 
-                        <b> Student name </b>
-                    </label>
-                                <input type="text"  placeholder="Enter your first name"  required>
-           <br><br> <input type="text" placeholder="last name"required> 
-        </td>
-    </tr>
-</div>
+             <div1>
+                        <b id="Name"> Student name </b>
+                                  <input type="text" id="kumar"  placeholder="Enter your first name"  required>
+         </div1>
+        <input type="text" id="lats" placeholder="last name"required> 
 
-        </table> <br>
+       <br>
         <fieldset> <legend>Gender </legend>
             
         <label for="Male">
-<input type="radio" name="gender" id="Male" value="male" > Male</label>
+<input type="radio" name="gender" id="Male" value="Male" > Male</label>
 <label for="female"> 
-<input type="radio" name="gender" id="female" value="male" > Femail </label>
+<input type="radio" name="gender" id="female" value="Female" > Femail </label>
 <label for="other">
-    <input type="radio" name="gender" id="other" value="other" > other 
+    <input type="radio" name="gender" id="other" value="Other" > other 
 </label></fieldset> <br><br>
         <div>
-            <lable for="father name"> <b>father name</b></lable>
+            <lable for="father name"> <b>Father name</b></lable>
             <input type="text" placeholder=" Enter your Father name"required> 
         </div> <br>
         <div>
-            <label for="mother name"> <b>mother name</b></label>
+            <label for="mother name"> <b>Mother name</b></label>
             <input type="text " placeholder="Enter your Mother name" required>
         </div> <br>
         <label for="class"> <b>class</b>
@@ -54,7 +128,7 @@
             <option value="7">7</option>
             <option value="8">8</option>
             <option value="9">9</option>
-            <option value="10">10</option>
+               <option value="10">10</option>
             <option value="11">11</option>
             <option value="12">12</option>
             <option value="other">other</option>
@@ -62,18 +136,18 @@
         </select> <br>
     </label> <br>
         <div>
-            <input type="email" placeholder="Enter your email" > 
+            <input type="Email" placeholder="Enter your email" > 
             </div> <br>
             <div>
-        
-                <input type="tel" placeholder="Mo.- number" maxlength="10" required> <br> <br>
-                <input type="tel" placeholder=" Parents Mo.- number" maxlength="10" >
+        <input type="number" placeholder="Enter your mobile number" required> <br>
             </div> <br>
+            <input type="password" placeholder="Password min-8 max-15" required="number"minlength="8" maxlength="15"> <br> <br>
+            <input type="password" placeholder="Confirm password" required="number" minlength="8" maxlength="15"> <br> <br>
             <div> <label> <b>Enter your Birth</b></label>
                 <input type="date" placeholder="Dd-Mm-Yy">
             </div>
             <div> <br>
-<input type="tel" placeholder="pin code" maxlength="6" > <br> <br> </div>
+<input type="tel" placeholder="Pin code" maxlength="6" > <br> <br> </div>
 
 <div><label for="stream"><b>Stream</b></label>
 <select>
@@ -85,7 +159,7 @@
 </select> </div> <br>
 <input type="file">
 <br> <div><br> <hr>
-    <legend> <big><b><th>School terms and condition: </th></b></big>Mobile and other portable devices like Ipads, Ipods, and Tablets etc. shall not be allowed to be used or seen in the school campus at any time. The school shall not be responsible for any incidences of theft or devices getting misplaced or misused. Also, all such devices, if found will be confiscated by a member of the school staff and will only be returned back to parents later by the Principal only after calling them to the </legend>
+    <legend> <big><b><th>School terms and condition: > </th></b></big>Mobile and other portable devices like Ipads, Ipods, and Tablets etc. shall not be allowed to be used or seen in the school campus at any time. The school shall not be responsible for any incidences of theft or devices getting misplaced or misused. Also, all such devices, if found will be confiscated by a member of the school staff and will only be returned back to parents later by the Principal only after calling them to the </legend>
   <hr>
   <label>
     <b>
@@ -95,12 +169,12 @@
     <input type="checkbox">
 </di>
 
-<center> 
-    <button>
-        <input type="submit">
+ <div class="container">
+    
+    <button class="sum">
+    <input type="submit">
     </button>
-</center>
-
+</div>
      </form>
-</body>
+     </body>
 </html>

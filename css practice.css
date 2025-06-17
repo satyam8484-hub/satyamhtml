@@ -1,0 +1,120 @@
+/* Add this CSS inside your <style> tag */
+/* filepath: c:\Users\Windows\Documents\satyamhtml\form\basic form.html */
+body {
+    background: #f4f6fa;
+    font-family: Arial, sans-serif;
+}
+
+form {
+    background: #fff;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px 40px 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.1,0);
+}
+
+nav {
+    background-color: cadetblue;
+    text-align: center;
+    padding: 16px 0 10px 0;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 20px;
+}
+
+nav h1 {
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+label, legend, b {
+    font-size: 1rem;
+    color: #2c3e50;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+input[type="tel"],
+select {
+    width: 96%;
+    padding: 8px 10px;
+    margin: 8px 0 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+    background: #f9f9f9;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 6px;
+    accent-color: cadetblue;
+}
+
+fieldset {
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    padding: 10px 15px 10px 15px;
+    background: #f8fafd;
+}
+
+legend {
+    font-weight: bold;
+    color: #217dbb;
+}
+
+button, input[type="submit"] {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 28px;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: #217dbb;
+}
+
+center {
+    display: block;
+    margin-top: 10px;
+}
+
+hr {
+    border: 0;
+    border-top: 1.5px solid #bbb;
+    margin: 15px 0;
+}
+
+input[type="file"] {
+    margin: 10px 0 15px 0;
+}
+
+div {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+    form {
+        max-width: 98vw;
+        padding: 10px;
+    }
+    nav h1 {
+        font-size: 1.2rem;
+    }
+}
